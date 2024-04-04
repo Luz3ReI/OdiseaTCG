@@ -1,0 +1,74 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+
+header {
+    background-color: #fefefc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-family: Arial;
+    margin: 0;
+    flex-direction: column;
+}
+
+.logo {
+    height: 100px;
+    vertical-align: middle;
+    display: flex;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0;
+    background-color: azure;
+}
+
+.logoUsuario, .logoLupa {
+    height: 25px;
+    padding: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}  
+
+
+nav {
+    align-items: end;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+a {
+    color: #00000f;
+    text-decoration: none;
+}
+
+.menu, .sesion {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: flex-end;
+}
