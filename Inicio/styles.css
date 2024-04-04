@@ -10,10 +10,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     font-family: Arial;
     margin: 0;
-    flex-direction: column;
+    padding: 10px;
 }
 
 .logo {
@@ -28,22 +28,36 @@ header {
     flex: 1;
     display: flex;
     align-items: center;
-    border: solid;
-    border-radius: 5px 0 0 5px;
 }
 
 .search-input {
     flex: 1;
-    padding: 0;
+    padding: 7px 30vw 7px 5px;
     background-color: azure;
+    border: solid;
+    border-radius: 13px;
 }
 
-.logoUsuario, .logoLupa {
-    height: 25px;
+.search-bar, .sesion {
     padding: 10px;
     vertical-align: middle;
     cursor: pointer;
 }  
+
+.logoUsuario {
+    height: 50px;
+}
+
+.logoLupa {
+    height: 25px;
+}
+
+.logoUsuario img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 0);
+}
 
 
 nav {
@@ -64,11 +78,4 @@ nav ul li {
 a {
     color: #00000f;
     text-decoration: none;
-}
-
-.menu, .sesion {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: flex-end;
 }
