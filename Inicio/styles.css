@@ -86,38 +86,14 @@ a {
 /* Fin del encabezado */
 
 
-/* Inicio Carrusel */
+/* Inicio Carrusel V01
 
 small {
     font-size: 80%;
 }
 
-a {
-    color: #08A2E0;
-    text-decoration: none;
-    background-color: transparent;
-  }
-  
-  a:hover {
-    color: #08A2E0;
-    text-decoration: underline;
-  }
-  
-  a:not([href]):not([class]) {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
-  }
-
   .carrusel {
     position: relative;
-  }
-
-  .carrusel.pointer-event {
     touch-action: pan-y;
   }
 
@@ -195,7 +171,7 @@ a {
   .control-prev-carrusel,
   .control-next-carrusel {
   position: absolute;
-  top: 0;
+  top: 250px;
   bottom: 0;
   z-index: 1;
   display: flex;
@@ -228,7 +204,7 @@ a {
 }
 
 .control-next-carrusel {
-    right: 0;
+    right: 80px;
 }
 
 .control-prev-carrusel,
@@ -241,7 +217,7 @@ a {
 
 .control-prev-carrusel-icono,
 .control-next-carrusel-icono {
-    height: 50px;
+    height: 100px;
 }
 
 .carrusel-indicators {
@@ -298,3 +274,32 @@ a {
     color: #00000f;
     text-align: center;
   }
+
+  */
+
+/* Inicio Carrusel V02 */
+
+.carrusel {
+  display: flex;
+  width: 90%;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.carrusel-item {
+  flex: 0 0 100%;
+  width: 100vh;
+  object-fit: cover;
+  margin: auto;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrusel-item {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
