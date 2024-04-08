@@ -95,14 +95,9 @@
 </div>
 Fin del Carrusel-->
 
-<!--Inicio del Carrusel V02-->
+<!--Inicio del Carrusel V02
 <div class="carrusel" id="elCarrusel" data-ride="carrusel">
-
-    <ul class="carrusel-indicadores">
-        <li data-target="#elCarrusel" data-slide-to="0" class="active"></li>
-        <li data-target="#elCarrusel" data-slide-to="1"></li>
-        <li data-target="#elCarrusel" data-slide-to="2"></li>
-    </ul>
+<div class="carrusel-externo">
 
     <div class="carrusel-interno" role="listbox">
         <div class="carrusel-item active">
@@ -113,7 +108,6 @@ Fin del Carrusel-->
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquam blanditiis nisi est dolor porro quaerat aspernatur!...</p>
             </div>
         </div>
-    </div>
 
     <div class="carrusel-item">
         <img class="carrusel-img" src="C:\Users\LUZ\Desktop\Proyecto One Piece\LogosOdisea\OnePieceTCG2.png" alt="Image2">
@@ -132,8 +126,33 @@ Fin del Carrusel-->
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquam blanditiis nisi est dolor porro quaerat aspernatur!...</p>
         </div>
     </div>
+
+    <div class="carrusel-indicadores">
+        <span class="punto" onclick="currentSlide(0)"></span>
+        <span class="punto" onclick="currentSlide(1)"></span>
+        <span class="punto" onclick="currentSlide(2)"></span>
+    </div>
+
+    </div>
+
+    
+
 </div>
-<!--Fin del Carrusel V02-->
+</div>
+Fin del Carrusel V02-->
+
+
+<div class="carousel-container">
+    <div class="carousel">
+      <img src="imagen1.jpg" alt="Imagen 1">
+      <img src="imagen2.jpg" alt="Imagen 2">
+      <img src="imagen3.jpg" alt="Imagen 3">
+    </div>
+  </div>
+  
+  <button class="prev-btn" onclick="prevSlide()">Prev</button>
+  <button class="next-btn" onclick="nextSlide()">Next</button>
+
 
 
 </body>
