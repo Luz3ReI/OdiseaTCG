@@ -1,21 +1,22 @@
 
 //Inicio Carrusel
 
-$('section.awSlider .carousel').carousel({
-	pause: "hover",
-  interval: 2000
-});
+'use strict'
 
-var startImage = $('section.awSlider .item.active > img').attr('src');
-$('section.awSlider').append('<img src="' + startImage + '">');
+const grande    = document.querySelector('.grande')
+const punto     = document.querySelectorAll('.punto')
 
-$('section.awSlider .carousel').on('slid.bs.carousel', function () {
- var bscn = $(this).find('.item.active > img').attr('src');
-	$('section.awSlider > img').attr('src',bscn);
-});
+punto.forEach( ( cadaPunto , i )=> {
+    punto[i].addEventListener('click',()=>{
+        let posicion  = i
+        let operacion = posicion * -33
+        grande.style.transform = `translateX(${ operacion }%)`
+        punto.forEach( ( cadaPunto , i )=>{
+            punto[i].classList.remove('activo')
+        })
+        punto[i].classList.add('activo')
 
+    })
+})
 
-/* 
-Philips ambilight tv
-Üzerine gleince duruyor slide
-*/
+//Fin Carrusel
