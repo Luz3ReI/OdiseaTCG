@@ -19,4 +19,6 @@ punto.forEach( ( cadaPunto , i )=> {
     })
 })
 
+
+
 //Fin Carrusel
