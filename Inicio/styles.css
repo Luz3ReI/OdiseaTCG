@@ -126,6 +126,7 @@ li {
   transform: translateX(0%);
   padding: 0;
   margin: 0;
+  background-color: #00000f;
 }
 
 .item-carrusel {
@@ -184,99 +185,120 @@ li {
 /* Fin Carrusel V03 */
 
 
-/* Inicio Noticias V02 */
+/* Inicio Noticias V03 */
 
-.contenedor-noticias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
+div, h2, p, figure {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 1040px;
   padding: 10px;
 }
 
-.columna {
+.column {
   flex: 1;
   flex-direction: column;
-  flex-basis: calc (50% - 20px);
 }
 
-.columna-principal {
-  flex: 2;
-}
-
-.articulo {
+.article {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  border: solid;
+  flex-basis: auto;
   margin: 10px;
+  border: solid;
+  border-radius: 30px;
 }
 
-
-.imagen-articulo {
+.article-image {
   display: block;
   padding-top: 75%;
   position: relative;
-  height: 9rem;
-  width: 12.5rem;
-  object-fit: cover;
+  width: 100%;
 }
 
-.imagen-articulo img {
+.article-image img {
   display: block;
   height: 100%;
-  left: 0%;
+  left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  border-radius: 30px;
   object-fit: cover;
 }
 
-.a1 {
+.article-image.is-3by2 {
   padding-top: 66.6666%;
 }
 
-.a2 {
+.article-image.is-16by9 {
   padding-top: 56.25%;
 }
 
-.articulo-cuerpo {
+.article-body {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: 20px;
 }
 
-.articulo-titulo {
+.article-title {
   flex-shrink: 0;
   font-size: 1.4em;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.articulo-contenido {
+.article-content {
   flex: 1;
   margin-top: 5px;
 }
 
-.articulo-informacion {
+.article-info {
   display: flex;
   font-size: 0.85em;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.articulo-principal {
-  flex-direction: row;
+@media screen and (min-width: 800px) {
+  .columns,
+  .column {
+    display: flex;
+  }
 }
 
-.articulo-principal .articulo-cuerpo {
-  flex: 1;
-}
+@media screen and (min-width: 1000px) {
+  .first-article {
+    flex-direction: row;
+  }
 
-.articulo-principal .imagen-articulo {
-  height: 18.75rem;
-  order: 2;
-  padding-top: 0;
-  width: 25rem;
+  .first-article .article-body {
+    flex: 1;
+  }
+
+  .first-article .article-image {
+    height: 300px;
+    order: 2;
+    padding-top: 0;
+    width: 400px;
+  }
+
+  .main-column {
+    flex: 3;
+  }
+
+  .nested-column {
+    flex: 2;
+  }
 }
