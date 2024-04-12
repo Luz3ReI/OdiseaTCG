@@ -184,185 +184,99 @@ li {
 /* Fin Carrusel V03 */
 
 
-/* Inicio Noticias */
+/* Inicio Noticias V02 */
 
-.contenedor {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.contenedor-noticias {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 10px;
 }
 
-.contenedor-2 {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.columna {
+  flex: 1;
+  flex-direction: column;
+  flex-basis: calc (50% - 20px);
 }
 
-.row {
+.columna-principal {
+  flex: 2;
+}
+
+.articulo {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  flex-direction: column;
+  border: solid;
+  margin: 10px;
 }
 
-.mb-1 {
-  margin-bottom: 1rem !important;
-}
 
-.columna-1 {
+.imagen-articulo {
+  display: block;
+  padding-top: 75%;
   position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.columna-1 {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%;
-}
-
-.columna-2 {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.columna-3 {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.columna-4 {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.columna-5 {
-  position: relative !important;
-  margin-bottom: 1rem !important;
-}
-
-.imagen-columna {
-  max-width: 100%;
-  height: auto;
-  width: 100% !important;
+  height: 9rem;
+  width: 12.5rem;
   object-fit: cover;
 }
 
-.columna-6 {
-  position: absolute;
-  width: 100%;
+.imagen-articulo img {
+  display: block;
   height: 100%;
-  padding: 30px;
+  left: 0%;
+  position: absolute;
   top: 0;
-  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.a1 {
+  padding-top: 66.6666%;
+}
+
+.a2 {
+  padding-top: 56.25%;
+}
+
+.articulo-cuerpo {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-  /* position: relative !important; */
+  padding: 20px;
 }
 
-.clasificacion-columna {
-  margin-bottom: 0.5rem !important;
-  font-size: 14px;
-}
-
-.px-1 {
-  padding-right: 0.25rem !important;
-  padding-left: 0.25rem !important;
-}
-
-.titulo-columna-1 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
+.articulo-titulo {
+  flex-shrink: 0;
+  font-size: 1.4em;
+  font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
-  font-size: 1.5rem;
 }
 
-.texto-columna {
-  margin: 0 !important;
+.articulo-contenido {
+  flex: 1;
+  margin-top: 5px;
 }
 
-.columna-7 {
-  width: 100% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+.articulo-informacion {
+  display: flex;
+  font-size: 0.85em;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-.clasificacion-columna .columna-7 {
-  font-size: 13px;
+.articulo-principal {
+  flex-direction: row;
 }
 
-.titulo-columna-2 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #343a40;
-  font-size: 1rem;
+.articulo-principal .articulo-cuerpo {
+  flex: 1;
 }
 
-
-
-@media (min-width: 576px) {
-  .contenedor-2 {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .contenedor-2 {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .contenedor-2 {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contenedor-2 {
-    max-width: 1140px;
-  }
-}
-
-
-@media (max-width: 1200px) {
-  .titulo-columna {
-    font-size: calc(1.275rem + 0.3vw) ;
-  }
-}
-
-@media print {
-  .contenedor-2 {
-    min-width: 992px !important;
-  }
+.articulo-principal .imagen-articulo {
+  height: 18.75rem;
+  order: 2;
+  padding-top: 0;
+  width: 25rem;
 }
