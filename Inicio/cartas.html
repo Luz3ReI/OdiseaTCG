@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdiseaTCG</title>
+    <script defer src="script.js" ></script>
+</head>
+
+<body>
+<header id="header">
+    
+
+    <!-- Inicio del Encabezado-->
+    <img id="header-img-medium" class="logo" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/Logo%20Odisea%20TCG.png?raw=true" alt="Logo Odisea TCG">
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <img class="logoLupa" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/lupa%20png.png?raw=true" alt="Buscar">
+    </div>
+
+
+    <div class="menu">
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#cartas">Cartas</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#decks">Decks</a></li>
+        </ul>
+    </nav>
+    </div>  
+
+    <div class="sesion">
+    <img id="logo-de-usuario-desconocido" class="logoUsuario" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/Logo%20Perfil.png?raw=true" alt="Iniciar Sesión">
+    </div>
+
+</header>
+<!--Fin del Encabezado-->
+
+
+<!--Inicio de página de Cartas V01-->
+
+<main class="main-card">
+    <section class="sidebar-container">
+        <div class="filter-container">
+            <div class="search-name">
+                <h3>Nombre de la Carta</h3>
+                <input type="text" class="search-name" placeholder="Carta OPX">
+                <button class="search-button">Buscar</button>
+            </div>
+            <div class="check-disponibilidad">
+                <h3>Disponibilidad</h3>
+                <form>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="intercambio-disponible">
+                        <label class="label-square" for="intercambio-disponible">Intercambio disponible</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="en-tienda">
+                        <label class="label-square" for="en-tienda">En tienda</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="sin-distribucion">
+                        <label class="label-square" for="sin-distribucion">Sin distribución</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="check-card-type">
+                <h3>Tipo de Carta</h3>
+                <form>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="personaje">
+                        <label class="label-square" for="personaje">Personaje / Character</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="evento">
+                        <label class="label-square" for="evento">Evento</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="lider">
+                        <label class="label-square" for="lider">Líder</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="don">
+                        <label class="label-square" for="don">DON!!</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="escena">
+                        <label class="label-square" for="escena">Escena / Stage</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="check-color">
+                <h3>Color</h3>
+                <form>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="verde">
+                        <label class="label-square" for="verde">Verde</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="morado">
+                        <label class="label-square" for="morado">Morado</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="negro">
+                        <label class="label-square" for="negro">Negro</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="rojo">
+                        <label class="label-square" for="rojo">Rojo</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="amarillo">
+                        <label class="label-square" for="amarillo">Amarillo</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="azul">
+                        <label class="label-square" for="azul">Azul</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="check-rareza">
+                <h3>Rareza</h3>
+                <form>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="comun">
+                        <label class="label-square" for="comun">Común / Common</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="raro">
+                        <label class="label-square" for="raro">Raro / Rare</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="infrecuente">
+                        <label class="label-square" for="infrecuente">Infrecuente / Uncommon</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="super-raro">
+                        <label class="label-square" for="super-raro">Super Raro / Super Rare</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="secret-rare">
+                        <label class="label-square" for="secret-rare">Secreta Rara / Secret Rare</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="alterno">
+                        <label class="label-square" for="alterno">Alterno</label>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card-container">
+
+    </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<!--Footer V01-->
+
+
+<div class="container"></div>
+<footer>
+
+    <!-- Footer social -->
+  <section class="ft-social">
+    <div class="container-social">
+        <a href=""><img class="logo-red-social" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/facebook_3488287.png?raw=true"></a>
+        <a href="#"><i class="fab fa-twitter"><img class="logo-red-social" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/twitter_3488290.png?raw=true"></a>
+        <!--<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>-->
+        <a href="#"><img class="logo-red-social" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/youtube_2673795.png?raw=true"></a>
+    </div>
+  </section>
+
+  <!-- Footer main -->
+  <section class="ft-main">
+    <div class="ft-main-item">
+      <h2 class="ft-title">Sobre nosotros</h2>
+      <ul>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Portales Relacionados</h2>
+      <ul>
+        <li><a href="#">TGC Player</a></li>
+        <li><a href="#">Card Market: One Piece</a></li>
+        <li><a href="#">One Piece Top Decks</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Sobre cartas</h2>
+      <ul>
+        <li><a href="#">Condición</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Advertise</a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  
+
+  <!-- Footer legal -->
+  <section class="ft-legal">
+    <ul class="ft-legal-list">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; 2019 Copyright Nowrap Inc.</li>
+    </ul>
+  </section>
+</footer>
+
+
+<!--Fin Footer V01-->
+
+
+</html>

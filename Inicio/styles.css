@@ -459,4 +459,16 @@ body {
 }
 
 
+/*Final Footer V01 */
 
+/*Inicio Cartas - Sidebar V01 */
+
+.sidebar-container {
+  border: solid;
+  border-radius: 30px;
+}
+
+.sidebar-container div {
+  margin: 0.5rem;
+
+}
