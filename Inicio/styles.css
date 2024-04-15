@@ -208,7 +208,7 @@ div, p, figure {
 .main {
   margin: 0 auto;
   max-width: 1040px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .column {
@@ -461,6 +461,94 @@ body {
 
 /*Final Footer V01 */
 
+/* Inicio de Página de Cartas V01 */
+
+.main-card {
+  margin: 0;
+  max-width: 1040px;
+}
+
+.card-container {
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1 rem;
+}
+
+.card-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding-bottom: 1rem;
+}
+
+.card-container-2 {
+  position: relative;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.25rem !important;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.card-container-3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  margin-bottom: 1.5rem !important;
+
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+
+}
+
+.card-image-container {
+  border-top: 0;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: transparent;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.card-title-container {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  text-align: center !important;
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+.card-body-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-body-container > p {
+  margin: 0.5rem;
+}
+
 /*Inicio Cartas - Sidebar V01 */
 
 .sidebar-container {
@@ -472,3 +560,53 @@ body {
   margin: 0.5rem;
 
 }
+
+/*Fin Cartas - Sidebar V01 */
+
+@media (max-width: 768px) {
+  .card-container-3 {
+    flex-basis: 50%; /* Cada elemento ocupa 1/2 del contenedor en pantallas más pequeñas */
+    max-width: 50%; /* Ancho máximo de 50% para cada elemento */
+  }
+}
+
+/* Media query para cambiar a 1 columna en pantallas aún más pequeñas */
+@media (max-width: 576px) {
+  .card-container-3 {
+    flex-basis: 100%; /* Cada elemento ocupa el 100% del contenedor en pantallas aún más pequeñas */
+    max-width: 100%; /* Ancho máximo de 100% para cada elemento */
+  }
+}
+
+/* Inicio Navegación - V01 */
+
+.navegation-container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 0.25rem !important;
+}
+
+.page-navegation-card {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center !important;
+  margin-bottom: 1rem !important;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  border: 1px solid #00000f;
+}
+
+/* Final Navegación - V01
+
+/* Final de Página de Cartas V01 */
