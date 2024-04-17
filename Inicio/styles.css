@@ -610,3 +610,77 @@ body {
 /* Final Navegación - V01
 
 /* Final de Página de Cartas V01 */
+
+/* Inicio Carta Individual V01 */
+
+.contenedor-carta-individual {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  display: flex;
+  flex-wrap: gride;
+}
+
+.contenedor-ci-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+
+.contenedor-ci-3 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 3rem !important;
+
+  box-sizing: border-box;
+  display: block;
+}
+
+.contenedor-ci-4 {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contenedor-ci-imagen {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  width: 24rem;
+
+}
+
+.carta-imagen {
+  position: relative;
+  display: none;
+  float: left;
+
+  width: 100%;
+} 
+
+.carta-individual {
+  width: 100% !important;
+  height: 100% !important;
+  vertical-align: middle;
+  border-style: none;
+
+}
+
+.contenedor-ci-info {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
