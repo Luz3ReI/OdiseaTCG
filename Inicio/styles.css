@@ -613,74 +613,52 @@ body {
 
 /* Inicio Carta Individual V01 */
 
-.contenedor-carta-individual {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-  display: flex;
-  flex-wrap: gride;
-}
-
-.contenedor-ci-2 {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  padding-right: 3rem !important;
-  padding-left: 3rem !important;
-}
-
-.contenedor-ci-3 {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 3rem !important;
-
-  box-sizing: border-box;
-  display: block;
-}
-
-.contenedor-ci-4 {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.contenedor-ci-imagen {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-
-  width: 24rem;
-
-}
-
-.carta-imagen {
-  position: relative;
-  display: none;
-  float: left;
-
-  width: 100%;
-} 
-
 .carta-individual {
-  width: 100% !important;
-  height: 100% !important;
-  vertical-align: middle;
-  border-style: none;
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "imagen tabla grafica";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
 
-}
-
-.contenedor-ci-info {
-  position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 1rem;
+  position: relative;
 }
+
+.titulo-carta-individual {
+  grid-area: head;
+  grid-column: 1 / 4;
+  text-align: center;
+}
+
+.contenedor-imagen-ci {
+  grid-area: imagen;
+  overflow: hidden;
+  width: 24rem;
+}
+
+.contenedor-tabla-ci {
+  grid-area: tabla;
+}
+
+.contenedor-grafica-ci {
+  grid-area: grafica;
+}
+
+.imagen-carta-individual {
+  object-fit: cover;
+  width: 24rem;
+}
+
+.tabla-ci td, .tabla-ci th {
+  border: none;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: large;
+}
+
+/* Fin Carta Individual V02 */
+

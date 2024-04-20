@@ -40,98 +40,233 @@
 </header>
 <!--Fin del Encabezado-->
 
-<!--Inicio Carta Individual V01-->
+<!--Inicio Carta Individual V02-->
 
-<section class="contenedor-carta-individual">
-    <div class="contenedor-ci-2">
+
+<section class="carta-individual">  
+    <div class="titulo-carta-individual">
         <h2 class="ci-titulo">Gecko Moria (OP06-086) (V.1)</h2>
-        <div class="contenedor-ci-3">
-            <div class="contenedor-ci-4">
-                <div class="contenedor-ci-imagen">
-                    <img class="carta-individual" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/OP06-086.png?raw=true">
-                </div>
-                <div class="contenedor-ci-imagen">
-                    <img class="grafica-ci" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/descarga.png?raw=true">
-                </div>
-            </div>
-        </div>
-        <div class="contenedor-ci-info">
-
-            <div class="tabla-best-sellers">
-                <h2 class="article-title">Información</h2>
-                <table class="tabla-ci-1">
-                    <!--<thead>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>-->
-                    <tbody>
-                        <tr>
-                            <td>Tipo de Carta</td>
-                            <td>Personaje</td>
-                        </tr>
-                        <tr>
-                            <td>Color</td>
-                            <td>Negro</td>
-                        </tr>
-                        <tr>
-                            <td>Rareza</td>
-                            <td>Super Raro / Super Rare</td>
-                        </tr>
-                        <tr>
-                            <td>Número</td>
-                            <td>086</td>
-                        </tr>
-                        <tr>
-                            <td>Impreso en</td>
-                            <td>Wings of the Captain</td>
-                        </tr>
-                        <tr>
-                            <td>Disponibles en linea</td>
-                            <td>NA (0-X)</td>
-                        </tr>
-                        <tr>
-                            <td>Precio más bajo actual</td>
-                            <td>$211.87 mxn</td>
-                        </tr>
-                        <tr>
-                            <td>Precio más alto actual</td>
-                            <td>$317.81 mxn</td>
-                        </tr>
-                        <tr>
-                            <td>Precio promedio mensual (30 días)</td>
-                            <td>$16.41 mxn</td>
-                        </tr>
-                        <tr>
-                            <td>Precio promedio semanal (7 días)</td>
-                            <td>$253.01 mxn</td>
-                        </tr>
-                        <tr>
-                            <td>Precio promedio diario</td>
-                            <td>$14.08 mxn</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    </div>
+    <div class="contenedor-imagen-ci">
+        <img class="imagen-carta-individual" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/OP06-086.png?raw=true">
+    </div>
+    <div class="contenedor-tabla-ci">
+        <table class="tabla-ci">
+            <!--<thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>-->
+            <tbody>
+                <tr>
+                    <td>Tipo de Carta</td>
+                    <td>Personaje</td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td>Negro</td>
+                </tr>
+                <tr>
+                    <td>Rareza</td>
+                    <td>Super Raro / Super Rare</td>
+                </tr>
+                <tr>
+                    <td>Número</td>
+                    <td>086</td>
+                </tr>
+                <tr>
+                    <td>Impreso en</td>
+                    <td>Wings of the Captain</td>
+                </tr>
+                <tr>
+                    <td>Disponibles en linea</td>
+                    <td>NA (0-X)</td>
+                </tr>
+                <tr>
+                    <td>Precio más bajo actual</td>
+                    <td>$211.87 mxn</td>
+                </tr>
+                <tr>
+                    <td>Precio más alto actual</td>
+                    <td>$317.81 mxn</td>
+                </tr>
+                <tr>
+                    <td>Precio promedio mensual (30 días)</td>
+                    <td>$16.41 mxn</td>
+                </tr>
+                <tr>
+                    <td>Precio promedio semanal (7 días)</td>
+                    <td>$253.01 mxn</td>
+                </tr>
+                <tr>
+                    <td>Precio promedio diario</td>
+                    <td>$14.08 mxn</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="contenedor-grafica-ci">
+        <img class="grafica-ci" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/descarga.png?raw=true">
     </div>
 </section>
 
+<!--Fin Carta Individual V02-->
 
+<!--Inicio Tabla de Venta  V001-->
 
+<section class="venta-individual columns">
+    <div class="filtro-venta-individual sidebar-container column">
 
+        <div class="check-vendedor">
+            <h3>Tipo de Vendedor</h3>
+            <form>
+                <div class="check-container">
+                    <input type="checkbox" class="square" checked id="tienda">
+                    <label class="label-square" for="tienda">Tienda Oficial</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" class="square" checked id="vendedor-verificado">
+                    <label class="label-square" for="vendedor-verificado">Vendedor verificado</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" class="square" checked id="vendedor">
+                    <label class="label-square" for="vendedor">Vendedor</label>
+                </div>
+            </form>
+        </div>
 
+        <div class="calificacion-vendedor">
+            <h3>Calificación minima del vendedor</h3>
+            <form>
+                <input type="number" class="number-check" min="0" max="10">
+            </form>
+        </div>
 
+        <div class="check-condicion">
+            <h3>Condición de Carta</h3>
+            <form>
+                <div class="check-container">
+                    <input type="checkbox" class="square" checked id="near-mint">
+                    <label class="label-square" for="near-mint">Casi nueva / Near mint</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" class="square" checked id="lightly-played">
+                    <label class="label-square" for="lightly-played">Ligeramente jugada / Lightly played</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" class="square" checked id="moderately-played">
+                    <label class="label-square" for="moderately-played">Moderadamente jugada / Moderately played</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" class="square" checked id="heavily-played">
+                    <label class="label-square" for="heavily-played">Realmente jugada / Heavily played</label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" class="square" checked id="damaged">
+                    <label class="label-square" for="damaged">Dañada / Damaged</label>
+                </div>
+            </form>
+        </div>
 
+        <div class="check-rango-precios">
+            <h3>Precio máximo</h3>
+            <form>
+                <input type="range" value="220" min="211.87" max="317.81" oninput="this.nextElementSibling.value = this.value">
+                <output>220</output>
+            </form>
+        </div>
 
+        <div class="buscar">
+            <img class="logoLupa" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/lupa%20png.png?raw=true" alt="Buscar">
+        </div>
 
+    </div>
 
+    <div class="tabla-vendedores card-container-2">
 
+        <div class="orden-tabla-vendedores">
+            <form>
+                <label for="orden-tabla-vendedores">Ordenar por:</label>
+                <input type="text" list="clasificacion-vendedores" id="orden-tabla-vendedores" name="orden-tabla-vendedores"/>
+                <datalist id="clasificacion-vendedores">
+                    <option value="Calificación mayor a menor">Calificación mayor a menor</option>
+                    <option value="Calificación menor a mayor">Calificación menor a mayor</option>
+                    <option value="Precio mayor a menor">Precio mayor a menor</option>
+                    <option value="Precio menor a mayor">Precio menor a mayor</option>
+                    <option value="Condición mayor a menor">Condición mayor a menor</option>
+                    <option value="Condición menor a mayor">Condición menor a mayor</option>
+                </datalist>
+            </form>
+        </div>
 
+        <div class="contenedor-tabla-ci">
+            <table class="tabla-ci tabla-vendedores">
+                <thead>
+                    <tr>
+                        <th>Nombre del vendedor</th>
+                        <th>Tipo de vendedor</th>
+                        <th>Calificación</th>
+                        <th>Estado</th>
+                        <th>Condición de carta</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Roger</td>
+                        <td>Tienda</td>
+                        <td>10.0</td>
+                        <td>Jalisco</td>
+                        <td>Casi Nueva</td>
+                        <td>$200.00 mxn</td>
+                    </tr>
+                    <tr>
+                        <td>Raleight</td>
+                        <td>Vendedor verificado</td>
+                        <td>7.0</td>
+                        <td>Chihuahua</td>
+                        <td>Ligeramente jugada</td>
+                        <td>$210.00 mxn</td>
+                    </tr>
+                    <tr>
+                        <td>Gaban</td>
+                        <td>Vendedor</td>
+                        <td>9.0</td>
+                        <td>Morelia</td>
+                        <td>Moderadamente jugada</td>
+                        <td>$220.00 mxn</td>
+                    </tr>
+                    <tr>
+                        <td>Kozuki</td>
+                        <td>Tienda</td>
+                        <td>N/A</td>
+                        <td>Veracruz</td>
+                        <td>Realmente jugada</td>
+                        <td>$205.00 mxn</td>
+                    </tr>
+                    <tr>
+                        <td>Buggy</td>
+                        <td>Vendedor verificado</td>
+                        <td>5.8</td>
+                        <td>Estado de México</td>
+                        <td>Dañada</td>
+                        <td>$108.00 mxn</td>
+                    </tr>
+                    <tr>
+                        <td>Shanks</td>
+                        <td>Vendedor</td>
+                        <td>9.4</td>
+                        <td>Colima</td>
+                        <td>Casi nueva</td>
+                        <td>$260.00 mxn</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-
-
+</section>
 
 
 
