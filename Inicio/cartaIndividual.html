@@ -115,8 +115,8 @@
 
 <!--Inicio Tabla de Venta  V001-->
 
-<section class="venta-individual columns">
-    <div class="filtro-venta-individual sidebar-container column">
+<section class="venta-individual">
+    <div class="filtro-venta-individual">
 
         <div class="check-vendedor">
             <h3>Tipo de Vendedor</h3>
@@ -183,25 +183,25 @@
 
     </div>
 
-    <div class="tabla-vendedores card-container-2">
+    <div class="orden-tabla-vendedores">
+        <form>
+            <label for="orden-tabla-vendedores">Ordenar por:</label>
+            <input type="text" list="clasificacion-vendedores" id="orden-tabla-vendedores" name="orden-tabla-vendedores"/>
+            <datalist id="clasificacion-vendedores">
+                <option value="Calificación mayor a menor">Calificación mayor a menor</option>
+                <option value="Calificación menor a mayor">Calificación menor a mayor</option>
+                <option value="Precio mayor a menor">Precio mayor a menor</option>
+                <option value="Precio menor a mayor">Precio menor a mayor</option>
+                <option value="Condición mayor a menor">Condición mayor a menor</option>
+                <option value="Condición menor a mayor">Condición menor a mayor</option>
+            </datalist>
+        </form>
+    </div>
 
-        <div class="orden-tabla-vendedores">
-            <form>
-                <label for="orden-tabla-vendedores">Ordenar por:</label>
-                <input type="text" list="clasificacion-vendedores" id="orden-tabla-vendedores" name="orden-tabla-vendedores"/>
-                <datalist id="clasificacion-vendedores">
-                    <option value="Calificación mayor a menor">Calificación mayor a menor</option>
-                    <option value="Calificación menor a mayor">Calificación menor a mayor</option>
-                    <option value="Precio mayor a menor">Precio mayor a menor</option>
-                    <option value="Precio menor a mayor">Precio menor a mayor</option>
-                    <option value="Condición mayor a menor">Condición mayor a menor</option>
-                    <option value="Condición menor a mayor">Condición menor a mayor</option>
-                </datalist>
-            </form>
-        </div>
+    <div class="tabla-vendedores">
 
         <div class="contenedor-tabla-ci">
-            <table class="tabla-ci tabla-vendedores">
+            <table class="tabla-ci-vendedores">
                 <thead>
                     <tr>
                         <th>Nombre del vendedor</th>

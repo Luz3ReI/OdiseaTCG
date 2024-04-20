@@ -662,3 +662,59 @@ body {
 
 /* Fin Carta Individual V02 */
 
+/* Inicio Tabla de Venta V02 */
+
+.venta-individual {
+  display: grid;
+  grid-template-areas: 
+  "filtro clasificacion"
+  "filtro tabla-vendedores";
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+
+  width: 95%;
+  padding: 1rem;
+  position: relative;
+  margin: 1rem;
+}
+
+.filtro-venta-individual {
+  grid-area: filtro;
+  border: solid;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+.filtro-venta-individual div {
+  margin: 1rem;
+}
+
+.orden-tabla-vendedores {
+  grid-area: clasificacion;
+  align-items: center;
+  text-align: right;
+}
+
+.tabla-vendedores {
+  grid-area: tabla-vendedores;
+
+}
+
+.tabla-ci-vendedores {
+  border: solid;
+  text-align: center;
+  font-size: large;
+
+  justify-content: center;
+  align-items: start;
+}
+
+.tabla-ci-vendedores th {
+  background-color: #77A6C7;
+}
+
+.tabla-ci-vendedores th, .tabla-ci-vendedores td {
+  font-size: large;
+}
