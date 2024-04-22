@@ -610,3 +610,207 @@ body {
 /* Final Navegación - V01
 
 /* Final de Página de Cartas V01 */
+
+/* Inicio Carta Individual V01 */
+
+.carta-individual {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "imagen tabla grafica";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.titulo-carta-individual {
+  grid-area: head;
+  grid-column: 1 / 4;
+  text-align: center;
+}
+
+.contenedor-imagen-ci {
+  grid-area: imagen;
+  overflow: hidden;
+  width: 24rem;
+}
+
+.contenedor-tabla-ci {
+  grid-area: tabla;
+}
+
+.contenedor-grafica-ci {
+  grid-area: grafica;
+}
+
+.imagen-carta-individual {
+  object-fit: cover;
+  width: 24rem;
+}
+
+.tabla-ci td, .tabla-ci th {
+  border: none;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: large;
+}
+
+/* Fin Carta Individual V02 */
+
+/* Inicio Tabla de Venta V02 */
+
+.venta-individual {
+  display: grid;
+  grid-template-areas: 
+  "filtro clasificacion"
+  "filtro tabla-vendedores";
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+
+  width: 95%;
+  padding: 1rem;
+  position: relative;
+  margin: 1rem;
+}
+
+.filtro-venta-individual {
+  grid-area: filtro;
+  border: solid;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+.filtro-venta-individual div {
+  margin: 1rem;
+}
+
+.orden-tabla-vendedores {
+  grid-area: clasificacion;
+  align-items: center;
+  text-align: right;
+}
+
+.tabla-vendedores {
+  grid-area: tabla-vendedores;
+
+}
+
+.tabla-ci-vendedores {
+  border: solid;
+  text-align: center;
+  font-size: large;
+
+  justify-content: center;
+  align-items: start;
+}
+
+.tabla-ci-vendedores th {
+  background-color: #77A6C7;
+}
+
+.tabla-ci-vendedores th, .tabla-ci-vendedores td {
+  font-size: large;
+}
+
+
+/* Inicio de Página de Vendedor V01 */
+
+.info-vendedor-1 {
+  position: relative;
+  margin: auto;
+}
+
+.caja-info-vendedor-1 {
+  float: center;
+  position: relative;
+  width: 18rem;
+  height: 26rem;
+  border: solid;
+  border-radius: 30px;
+  z-index: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.foto-perfil-vendedor {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  justify-content: center;
+}
+
+.foto-perfil {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.caja-info-vendedor-2 {
+  position: flex;
+  left: 0;
+  right: 0;
+  margin: 25px auto 25px auto;
+  text-align: center;
+}
+
+.caja-info-vendedor-2 .tipo-vendedor-perfil {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.caja-info-vendedor-3 {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  margin: 25px auto 25px auto;
+}
+
+.caja-info-vendedor-4 .strong {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.caja-info-vendedor-4 .span {
+  font-size: 26px;
+  padding: .18em 0;
+  display: inline-block;
+}
+
+.contenedor-cartas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabla-opiniones-vendedor {
+  margin: 20px 
+}
+
+.tabla-opiniones-vendedor-1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.tabla-opiniones-vendedor-2 {
+  justify-content: center;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+/* Fin Hoja Vendedor V02 */
