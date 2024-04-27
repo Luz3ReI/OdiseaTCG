@@ -4,6 +4,16 @@
     }
   }
 
+/* General */
+
+img {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+
+
+
 
 /* Inicio del Encabezado */
 
@@ -505,7 +515,6 @@ body {
   margin-bottom: 1.5rem !important;
 
   flex: 0 0 25%;
-  max-width: 25%;
   box-sizing: border-box;
   padding: 0 1rem;
 
@@ -529,7 +538,7 @@ body {
 .card-title-container {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 0-5rem;
   text-align: center !important;
 }
 
@@ -833,12 +842,17 @@ body {
   margin: 1rem;
 }
 
-.noticias-1 {
+.grid-noticias {
   grid-area: noticias;
-  flex-direction: row;
-  flex-wrap: wrap;
   position: relative;
   display: flex;
+}
+
+
+
+.noticias-1 {
+  flex-direction: row;
+  flex-wrap: wrap;
   
   justify-content: center;
   align-items: center;
@@ -956,4 +970,125 @@ body {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
+}
+
+
+/* Fin pagina Articulos */
+
+/* Inicio pagina Articulo Individual V01 */
+
+.noticia-principal {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 1rem;
+}
+
+.noticia-principal-1 {
+  border: solid;
+  border-radius: 30px;
+  margin: 1rem;
+  position: relative;
+}
+
+.img-articulo-principal-1 {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  overflow: hidden;
+  max-width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.noticia-principal-1 .contenedor-articulo-1-info, .comentario-principal .contenedor-articulo-1-info {
+  font-size: medium;
+  margin: 1rem;
+}
+
+.img-articulo-principal-2 {
+  margin-bottom: 0.5rem;
+  width: 50%;
+  height: auto;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.noticia-principal-2 {
+  margin: 1rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.img-left {
+  margin-right: 1.5rem;
+  float: left;
+}
+
+.img-right {
+  margin-left: 1.5rem;
+  float: right;
+}
+
+.comentarios {
+  border: solid;
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.comentario-principal {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.img-perfil-comentario {
+  width: 50px;
+  margin: 2rem 0.25rem 0.25rem 1rem;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.comentario-texto {
+  flex: 1;
+  text-align: justify;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.reply {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: solid;
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 1rem;
+}
+
+.comentario-forma {
+  padding: 30px;
+  margin: 1rem;
+  display: block;
+  border: solid;
+  border-radius: 30px;
+}
+
+.forma-comentario {
+  margin-bottom: 1rem;
+}
+
+.input-comentario {
+  display: block;
+  width: 90%;
+  padding: 0.4rem 0.7rem;
+  font-size: 1rem;
+  height: auto;
+  overflow: auto;
+  resize: vertical;
+  margin: 1em;
 }
