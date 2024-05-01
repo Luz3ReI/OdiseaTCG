@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdiseaTCG</title>
+    <script defer src="script.js" ></script>
+</head>
+
+<body>
+<header id="header">
+    
+
+    <!-- Inicio del Encabezado-->
+    <img id="header-img-medium" class="logo" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/Logo%20Odisea%20TCG.png?raw=true" alt="Logo Odisea TCG">
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <img class="logoLupa" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/lupa%20png.png?raw=true" alt="Buscar">
+    </div>
+
+
+    <div class="menu">
+    <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cartas.html">Cartas</a></li>
+          <li><a href="articulos.html">Artículos</a></li>
+          <li><a href="decks.html">Decks</a></li>
+        </ul>
+    </nav>
+    </div>  
+
+    <div class="sesion">
+    <img id="logo-de-usuario-desconocido" class="logoUsuario" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/Logo%20Perfil.png?raw=true" alt="Iniciar Sesión">
+    </div>
+
+</header>
+<!--Fin del Encabezado-->
+
+
+<!--Inicio de página de Cartas V01-->
+
+<main class="main-card main columns">
+    <section class="sidebar-container column">
+        <div class="filter-container">
+            <div class="estado">
+                <h3>Nombre del deck</h3>
+                <input type="text" class="search-name" placeholder="Carta OPX">
+                <button class="search-button">Buscar</button>
+            </div>
+            <div class="check-deck-perfil">
+                <form class="lista-deck-perfil">
+                    <label for="lista-deck-perfil"><h3>Perfil de Deck</h3></label>
+                    <select name="lista-deck-perfil-1" id="lista-deck-perfil">
+                        <option value=""></option>
+                        <option value="ace">Ace</option>
+                        <option value="ccd">Ccd</option>
+                        <option value="dof">Dof</option>
+                        <option value="ed">Ed</option>
+                        <option value="iceburg">Iceburg</option>
+                        <option value="ivan">Ivan</option>
+                        <option value="kaido">Kaido</option>
+                        <option value="katakuri">Katakuri</option>
+                        <option value="kid">Kid</option>
+                        <option value="king">King</option>
+                        <option value="kuro">Kuro</option>
+                        <option value="law">Law</option>
+                        <option value="linlin">Lin Lin</option>
+                        <option value="lucci">Lucci</option>
+                        <option value="luffy">Luffy</option>
+                        <option value="mag">Mag</option>
+                        <option value="nami">Nami</option>
+                        <option value="sakasuki">Sakasuki</option>
+                        <option value="smoker">Smoker</option>
+                        <option value="yamato">Yamato</option>
+                        <option value="zoro">Zoro</option>
+                    </select>
+                </form>
+            </div>
+            <div class="check-color">
+                <h3>Color</h3>
+                <form>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="verde">
+                        <label class="label-square" for="verde">Verde</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="morado">
+                        <label class="label-square" for="morado">Morado</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="negro">
+                        <label class="label-square" for="negro">Negro</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="rojo">
+                        <label class="label-square" for="rojo">Rojo</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="amarillo">
+                        <label class="label-square" for="amarillo">Amarillo</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="azul">
+                        <label class="label-square" for="azul">Azul</label>
+                    </div>
+                </form>
+            </div>
+            <div class="check-setop">
+                <h3>Set</h3>
+                <form>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="op01">
+                        <label class="label-square" for="op01">OP 01</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="op02">
+                        <label class="label-square" for="op02">OP 02</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="op03">
+                        <label class="label-square" for="op03">OP 03</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st01">
+                        <label class="label-square" for="st01">ST 01</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st02">
+                        <label class="label-square" for="st02">ST 02</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st03">
+                        <label class="label-square" for="st03">ST 03</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st04">
+                        <label class="label-square" for="st04">ST 04</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st05">
+                        <label class="label-square" for="st05">ST 05</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st06">
+                        <label class="label-square" for="st06">ST 06</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st07">
+                        <label class="label-square" for="st07">ST 07</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st08">
+                        <label class="label-square" for="st08">ST 08</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st09">
+                        <label class="label-square" for="st09">ST 09</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st10">
+                        <label class="label-square" for="st10">ST 10</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st11">
+                        <label class="label-square" for="st11">ST 11</label>
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="square" checked id="st12">
+                        <label class="label-square" for="st12">ST 12</label>
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+
+    </section>
+
+    <section class="card-container">
+
+        <div class="orden-tabla">
+            <form class="orden-decks" action="#">
+                
+                <label for="orden-decks">Ordenar por</label>
+                <select name="orden-decks-1" id="orden-decks">
+                    <option value=""> </option>
+                    <option value="Calificación mayor a menor">Calificación mayor a menor</option>
+                    <option value="Calificación menor a mayor">Calificación menor a mayor</option>
+                    <option value="Precio mayor a menor">Precio mayor a menor</option>
+                    <option value="Precio menor a mayor">Precio menor a mayor</option>
+                    <option value="Fecha más reciente">Fecha más reciente</option>
+                    <option value="Fecha más antiguo">Fecha más antiguo</option>
+                </select>
+    
+                    <img class="logoLupa" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/lupa%20png.png?raw=true" alt="Buscar">
+                
+            </form>
+        </div>
+
+        
+        <div class="card-container-1">
+
+            <div class="contenedor-cartas">
+                
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="deck-container">
+                    <div class="deck-image-container">
+                    <a href=""><img class="deck-image" src="https://raw.githubusercontent.com/Luz3ReI/OdiseaTCG/12c15377144fd25c6fab3a08db0ef52229e45b6d/LogosOdisea/ST04-001.png"></a>
+                    </div>
+                    <div class="deck-title-container">
+                        <a href="" class="deck-title"><h3>ST04 Kaido</h3></a>
+                        <div class="deck-body-container">
+                            <table class="tabla-decks">
+                                <tbody>
+                                    <tr>
+                                        <td>Fecha</td>
+                                        <td>27 Abril 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autor</td>
+                                        <td>Homero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio Promedio</td>
+                                        <td>$300 mxn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calificación</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+        </div>
+
+        <div class="navegation-container">
+            <nav aria-label="Page navegation">
+                <ul class="page-navegation-card">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+
+
+
+</body>
+
+<!--Footer V01-->
+
+
+<div class="container"></div>
+<footer>
+
+    <!-- Footer social -->
+  <section class="ft-social">
+    <div class="container-social">
+        <a href=""><img class="logo-red-social" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/facebook_3488287.png?raw=true"></a>
+        <a href="#"><i class="fab fa-twitter"><img class="logo-red-social" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/twitter_3488290.png?raw=true"></a>
+        <!--<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>-->
+        <a href="#"><img class="logo-red-social" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/youtube_2673795.png?raw=true"></a>
+    </div>
+  </section>
+
+  <!-- Footer main -->
+  <section class="ft-main">
+    <div class="ft-main-item">
+      <h2 class="ft-title">Sobre nosotros</h2>
+      <ul>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Portales Relacionados</h2>
+      <ul>
+        <li><a href="#">TGC Player</a></li>
+        <li><a href="#">Card Market: One Piece</a></li>
+        <li><a href="#">One Piece Top Decks</a></li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Sobre cartas</h2>
+      <ul>
+        <li><a href="#">Condición</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Advertise</a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  
+
+  <!-- Footer legal -->
+  <section class="ft-legal">
+    <ul class="ft-legal-list">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; 2019 Copyright Nowrap Inc.</li>
+    </ul>
+  </section>
+</footer>
+
+
+<!--Fin Footer V01-->
+
+
+</html>

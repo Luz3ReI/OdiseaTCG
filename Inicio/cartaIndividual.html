@@ -25,10 +25,10 @@
     <div class="menu">
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#cartas">Cartas</a></li>
-            <li><a href="#articulos">Artículos</a></li>
-            <li><a href="#decks">Decks</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cartas.html">Cartas</a></li>
+          <li><a href="articulos.html">Artículos</a></li>
+          <li><a href="decks.html">Decks</a></li>
         </ul>
     </nav>
     </div>  
@@ -183,19 +183,28 @@
 
     </div>
 
-    <div class="orden-tabla-vendedores">
-        <form>
-            <label for="orden-tabla-vendedores">Ordenar por:</label>
-            <input type="text" list="clasificacion-vendedores" id="orden-tabla-vendedores" name="orden-tabla-vendedores"/>
-            <datalist id="clasificacion-vendedores">
+    <div class="orden-tabla">
+        <form class="orden-tabla-vendedores-3" action="#">
+            <!--<label for="orden-tabla-vendedores">Ordenar por:</label>
+            <input type="button" list="clasificacion-vendedores" id="orden-tabla-vendedores" name="orden-tabla-vendedores"/>
+            <datalist id="clasificacion-vendedores">-->
+            <label for="orden-tabla-vendedores-1">Ordenar por</label>
+            <select name="orden-tabla-vendedores-2" id="orden-tabla-vendedores-1">
+                <option value=""> </option>
                 <option value="Calificación mayor a menor">Calificación mayor a menor</option>
                 <option value="Calificación menor a mayor">Calificación menor a mayor</option>
                 <option value="Precio mayor a menor">Precio mayor a menor</option>
                 <option value="Precio menor a mayor">Precio menor a mayor</option>
                 <option value="Condición mayor a menor">Condición mayor a menor</option>
                 <option value="Condición menor a mayor">Condición menor a mayor</option>
-            </datalist>
+            </select>
+
+                <img class="logoLupa" src="https://github.com/Luz3ReI/OdiseaTCG/blob/main/LogosOdisea/lupa%20png.png?raw=true" alt="Buscar">
+            
+
+
         </form>
+        
     </div>
 
     <div class="tabla-vendedores">
@@ -214,7 +223,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Roger</td>
+                        <td><a href="vendedor.html">Roger</a></td>
                         <td>Tienda</td>
                         <td>10.0</td>
                         <td>Jalisco</td>
@@ -222,7 +231,7 @@
                         <td>$200.00 mxn</td>
                     </tr>
                     <tr>
-                        <td>Raleight</td>
+                        <td><a href="vendedor.html">Raleight</a></td>
                         <td>Vendedor verificado</td>
                         <td>7.0</td>
                         <td>Chihuahua</td>
@@ -230,7 +239,7 @@
                         <td>$210.00 mxn</td>
                     </tr>
                     <tr>
-                        <td>Gaban</td>
+                        <td><a href="vendedor.html">Gaban</a></td>
                         <td>Vendedor</td>
                         <td>9.0</td>
                         <td>Morelia</td>
@@ -238,7 +247,7 @@
                         <td>$220.00 mxn</td>
                     </tr>
                     <tr>
-                        <td>Kozuki</td>
+                        <td><a href="vendedor.html">Kozuki</a></td>
                         <td>Tienda</td>
                         <td>N/A</td>
                         <td>Veracruz</td>
@@ -246,7 +255,7 @@
                         <td>$205.00 mxn</td>
                     </tr>
                     <tr>
-                        <td>Buggy</td>
+                        <td><a href="vendedor.html">Buggy</a></td>
                         <td>Vendedor verificado</td>
                         <td>5.8</td>
                         <td>Estado de México</td>
@@ -254,7 +263,7 @@
                         <td>$108.00 mxn</td>
                     </tr>
                     <tr>
-                        <td>Shanks</td>
+                        <td><a href="vendedor.html">Shanks</a></td>
                         <td>Vendedor</td>
                         <td>9.4</td>
                         <td>Colima</td>
@@ -267,17 +276,6 @@
     </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
